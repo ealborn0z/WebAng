@@ -1,0 +1,25 @@
+<div class="counter-container">
+  <div class="counter-description" *ngIf="counterDescription">
+    {{ counterDescription }}
+  </div>
+  <div class="counter-websites">
+    <div class="website-completed">
+      
+        <div class="counter" id="counter1">{{ countCompleted }}</div>
+        <div class="progress-bar" id="progressBar1" [ngStyle]="{'width': (countCompleted / projectsCompleted) * 10 + '%'}"></div>
+        <div class="website-completed-title">
+          <h3>{{ websiteCompletedTitle }}</h3>
+        </div>
+      
+    </div>
+    <div class="website-supports">
+      
+        <div class="counter" id="counter2">{{ countSupports }}</div>
+        <div class="progress-bar" id="progressBar2" [ngStyle]="{'width': (countSupports / projectsSupports) * 40 + '%'}"></div>
+        <div class="website-completed-title">
+          <h3>{{ websiteSupportsTitle }}</h3>
+        </div>
+
+    </div>
+  </div>
+</div>

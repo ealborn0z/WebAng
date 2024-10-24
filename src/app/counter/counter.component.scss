@@ -1,0 +1,48 @@
+.counter-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.counter-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.counter-websites {
+    display: flex;
+    justify-content: space-around;
+}
+
+.website-completed,
+.website-supports {
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.website-completed:hover,
+.website-supports:hover {
+    transform: scale(1.05);
+}
+
+.counter {
+    font-size: 36px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 0;
+    /* Comienza en 0 y se llenará dinámicamente */
+    height: 5px;
+    /* Altura de la barra de progreso */
+    background-color: green;
+    /* Color de la barra de progreso */
+    margin: 10px 0;
+    /* Espaciado vertical */
+    transition: width 0.5s ease;
+    /* Transición suave */
+}

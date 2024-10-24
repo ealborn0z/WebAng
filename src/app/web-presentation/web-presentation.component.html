@@ -1,329 +1,516 @@
-<!--ealborn0z--> 
+<!--ealborn0z-->
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      [ngClass]="{ 'navbar-fixed': isNavbarFixed }"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          (click)="toggleMenu()"
+          [attr.aria-expanded]="isMenuOpen"
+          aria-controls="navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
-<body>   
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-logo">
-            <div class="logo-container">
-                <img src="./assets/logo/logo-white.png" alt="Tu Logo">
-            </div>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          [ngClass]="{ show: isMenuOpen }"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Acerca">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Proyectos">Highlight Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Habilidad">My Abilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="container">
-            <a class="navbar-brand" href="#Acercademi" id="formacionLabel">Informacion De Mi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Proyectos" id="proyectoLabel">Proyectos Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Habilidad" id="habilidadLabel">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contacto" id="contactoLabel">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </nav>
     <main>
-        <div class="principal-content" data-aos="fade-up">
-            <div class="my-content">
-                <section>
-                    <h1>Enmanuel Albornoz
-                        <br>
-                        <strong>Back-end & Front-end Developer</strong>
-                    </h1>
-                </section>
-                <section class="resume">
-                    <p id="AcercaLabel1">"Me destaco en superar los desafíos de la vida y los lenguajes de programación. <br>Mi naturaleza resiliente y habilidades en código me impulsan a encontrar soluciones <br> innovadoras en el vasto mundo de la programación."
-                    </p>
-                </section>
-            <div class="decorationunder"></div>
-                <div class="Contacto">
-                    <a href="https://ve.linkedin.com/in/enmanuel-a" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://www.upwork.com/freelancers/~010073e72d1e5ab62b" target="_blank"><i class="fa-brands fa-upwork"></i></a>
-                </div>
-            </div>
-            <div>
-                <picture>
-                    <div class="principal-imagen">
-                        <img src="./assets/images/EA.jpg" alt="imagen">
-                    </div>
-                </picture>
-            </div>
+      <div class="principal-content" data-aos="fade-up">
+        <div class="my-content">
+          <section>
+            <h1>
+              Enmanuel Albornoz
+              <br />
+              <strong>Back-end & Front-end Developer</strong>
+            </h1>
+          </section>
+          <section class="resume">
+            <p id="AcercaLabel1">
+              "I highlight at overcoming life challenges and programming
+              languages.<br />
+              My resilient nature and coding skills drive me to find
+              solutions.<br />
+              I strive to find innovative solutions in the vast world of
+              programming."
+            </p>
+          </section>
+          <div class="decorationunder"></div>
+          <div class="Contacto">
+            <a
+              href="https://ve.linkedin.com/in/enmanuel-a"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/ealborn0z"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.upwork.com/freelancers/~010073e72d1e5ab62b"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              ><i class="fa-brands fa-upwork"></i
+            ></a>
+          </div>
         </div>
+        <div>
+          <picture>
+            <div class="principal-imagen">
+              <img src="./assets/images/Me.png" alt="imagen" />
+            </div>
+          </picture>
+        </div>
+      </div>
     </main>
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-7" id="ProyectoLabel">Proyectos Destacados</h1>
+    <section id="Experiencia">
+      <header class="bg-dark text-white text-center py-4">
+        <div class="header-experience">
+        <i class="bi bi-briefcase"></i>
+        <h1 class="display-7" id="Experiencia">Work Experience</h1>
         </div>
-    </header>
-    <section id="Proyectos" class="py-5">
-        <div class="container" data-aos="fade-up" >
-            <p id="acercaDeMiTexto">
-            Como desarrollador junior, todos los <strong>proyectos destacados</strong> que encontrarás en mi portafolio han sido creados por mí. Estoy actualmente en una fase de aprendizaje y práctica, y <strong> estos proyectos son significativos para mí</strong>, ya que representan mis primeros logros en este emocionante viaje de desarrollo.
-            </p>
-            <div class="buttom">
-                <ul>
-                    <li (click)="seleccionarCategoria('Python')" [class.selected]="categoriaSeleccionada === 'Python'">Python</li>
-                    <li (click)="seleccionarCategoria('Javascript')" [class.selected]="categoriaSeleccionada === 'Javascript'">Javascript</li>
-                    <li (click)="seleccionarCategoria('HTML&CSS')" [class.selected]="categoriaSeleccionada === 'HTML&CSS'">HTML&CSS</li>
-                    <li (click)="seleccionarCategoria('Angular')" [class.selected]="categoriaSeleccionada === 'Angular'">Angular</li>
+      </header>
+      <div class="container" data-aos="fade-up">
+        <div class="body-experience">
+          <div class="Paragraph-experience">
+            <div class="experience-item first-job" data-aos="fade-up">
+              <div class="Details-Job">
+                <h3><strong>Web Developer</strong></h3>
+                <p><strong>S-FX</strong></p>
+                <p><strong>01/2024 - Present</strong></p>
+              </div>
+              <div class="Details-Experience">
+                <p>
+                  As a web developer, I have worked on the improvement and
+                  redesign of several websites, implementing changes based on
+                  the requirements and guidelines established by the clients. In
+                  addition, I have provided customer support and solved problems
+                  through tickets in GoDesk, applying my knowledge in databases.
+                  During these 10 months of experience, I have developed skills
+                  in both frontend and backend, which has allowed me to
+                  continuously learn and advance in my career.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Proyectos">
+      <header class="bg-dark text-white text-center py-4">
+        <div class="header-project">
+        <i class="bi bi-backpack2"></i>
+        <h1 class="display-7" id="ProyectoLabel">Highlight Projects</h1>
+        </div>
+      </header>
+      <div class="container" data-aos="fade-up">
+        <p id="acercaDeMiTexto">
+          With 10 months of experience working on <a href="https://s-fx.com/about/">S-FX</a>, I have worked on
+          <strong>Outstanding Projects</strong> spanning both
+          <strong>frontend and backend WordPress development</strong>. The
+          projects in my portfolio are those in which I have worked on providing
+          vital support or created my own, reflecting my constant learning and
+          practice in this exciting journey. These works are significant, as
+          they represent my earlys
+          <strong>achievements and continued growth in web development</strong>.
+        </p>
+       <app-counter 
+  [counterDescription]="'Total Projects'" 
+  [projectsCompleted]="1"  
+  [projectsSupports]="27"     
+  [websiteCompletedTitle]="'Completed Websites'" 
+  [websiteSupportsTitle]="'Supported Websites'">
+</app-counter>
+
+        <div class="buttom">
+          <ul>
+            <li id="WebCompleted"
+              (click)="seleccionarCategoria('WebCompleted')"
+              [class.selected]="categoriaSeleccionada === 'WebCompleted'"
+            >
+              Completed Websites
+            </li>
+            <li id="WebSupports"
+              (click)="seleccionarCategoria('WebSupports')"
+              [class.selected]="categoriaSeleccionada === 'WebSupports'"
+            >
+              Supported Websites
+            </li>
+          </ul>
+        </div>
+          
+
+ 
+        <div class="grid-container">
+          <div
+            *ngFor="let proyecto of proyectosMostrados"
+            class="proyecto-card project-card-animation"
+          >
+            <div class="body-features">
+              <div class="image-features">
+                <a target="_blank" [href]="proyecto.url">
+                  <img
+                    [src]="proyecto.imagen"
+                    [alt]="proyecto.nombre"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div class="descripcion-proyecto">
+                <h5 [ngStyle]="{ color: proyecto.ColorTextTitle }">
+                  <b>{{ proyecto.nombre }}</b>
+                </h5>
+                <div class="icons-structure">
+                  <div
+                    class="technologies"
+                    *ngFor="let tecnologia of proyecto.tecnologias"
+                  >
+                    <ul class="icons_techn">
+                      <li
+                        class="tooltip-container animate__animated animate__zoomIn"
+                      >
+                        <i
+                          class="fa-brands"
+                          [ngClass]="getIconClass(tecnologia)"
+                        ></i>
+                        <span class="tooltip-text">{{ tecnologia }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="paragraph-content">
+                  <p [ngStyle]="{ color: proyecto.ColorTextParagraph }">
+                    {{ proyecto.descripcion }}
+                  </p>
+                </div>
+                <hr />
+                <div class="link-features">
+                  <ul>
+                    <li>
+                      <a
+                        [href]="proyecto.url"
+                        target="_blank"
+                        class="link-item customize-unpreviewable"
+                        [ngStyle]="{ 'background-color': proyecto.color }"
+                      >
+                        <div class="icon-features">
+                          <i class="bi bi-globe"></i>
+                        </div>
+                        <div class="paragraph-features-link">
+                          <p>Website</p>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
+                </div>
+              </div>
             </div>
-            <div class="grid-container">
-                <!-- Proyecto 1 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'Python'" >
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/Python/chatbot">
-                        <img src="./assets/images/chatbot.png" alt="imagen chatbot">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Chatbot</h5>
-                        <p>Prototipo de chatbot basico.</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://www.python.org/" target="_blank"><i class="fa-brands fa-python"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            
-                <!-- Proyecto 2 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'Python'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/Python/GeneradorContrase%C3%B1as">
-                        <img src="./assets/images/generador.png" alt="imagen GeneradorContrasenas">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Generador De Contraseñas</h5>
-                        <p>Generador De Contraseñas basico.</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://www.python.org/" target="_blank"><i class="fa-brands fa-python"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-                 <!-- Proyecto 3 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'Javascript'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/Javascript/Generador%20de%20Citas">
-                        <img src="./assets/images/CitasTextuales.png" alt="imagen Citas">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Generador De Citas Textuales</h5>
-                        <p>Generador Basico De Citas.</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-                            <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank"><i class="fa-brands fa-js"></i> </a>
-                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-                <!-- Proyecto 4 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'Javascript'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/Javascript/PrimeraCalculadora">
-                        <img src="./assets/images/Calculadora.png" alt="imagen Calculadora">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Calculadora</h5>
-                        <p>Calculadora Basica</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-                            <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank"><i class="fa-brands fa-js"></i> </a>
-                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-                <!-- Proyecto 5 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'HTML&CSS'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/HTML%26CSS/LoginFacebook">
-                        <img src="./assets/images/Login.png" alt="imagen Login">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Seccion Login De Facebook</h5>
-                        <p>Seccion Del Login de facebook como referencia</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            
-                <!-- Proyecto 6 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'HTML&CSS'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/HTML%26CSS/WebPresentation">
-                        <img src="./assets/images/webSencilla.png" alt="imagen WebPresentacion">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Web Simple</h5>
-                        <p>Web de presentacion simple</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-                            <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank"><i class="fa-brands fa-js"></i> </a>
-                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3"></i></a>
-                        </div>
+          </div>
+          <!-- Botón Load More -->
+          <div class="Button-load-more">
+            <button
+              *ngIf="mostrarBotonLoadMore"
+              (click)="loadMore()"
+              class="btn btn-secondary"
+            >
+              Load More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            
-                <!-- Proyecto 7 -->
-                <div class="proyecto-card project-card-animation" *ngIf="categoriaSeleccionada === 'Angular'">
-                    <a target="_blank" href="https://github.com/ealborn0z/MisProyectos/tree/main/Angularpro/Web-PresentationAngular">
-                        <img src="./assets/images/Web.png" alt="imagen Angular">
-                    </a>
-                    <div class="descripcion-proyecto">
-                        <h5>Web Presentacion</h5>
-                        <p>Web de presentacion en framework Angular.</p>
-                        <hr>
-                        <div class="icons">
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" title="HTML" target="_blank"><i class="fa-brands fa-html5"></i></a>
-                            <a href="https://www.typescriptlang.org/" title="TypeScript" target="_blank"><i class="bi bi-filetype-tsx"></i></a>
-                            <a href="https://docs.fileformat.com/es/web/scss/" title="SCSS" target="_blank"><i class="bi bi-filetype-scss"></i></a>
-                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" title="Bootstrap" target="_blank"><i class="fa-brands fa-bootstrap"></i></a>
-                        </div>
-                    </div>
-                    <div class="botones-proyecto">
-                        <a href="https://github.com/ealborn0z" title="Github" target="_blank"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </section>
-    <header class="bg-dark text-white text-center py-5">
+    <section id="Habilidad">
+      <header class="bg-dark text-white text-center py-4">
         <div class="containerFinal">
-            <h1 class="display-7" id="HabilidadLabel">Habilidades</h1>
+          <div class="header-abilities">
+          <i class="bi bi-rocket-takeoff"></i>
+          <h1 class="display-7" id="HabilidadLabel">Abilities</h1>
+          </div>
         </div>
-    </header>
-    <section id="Habilidad" class="py-5">
-        <div class="container">
-            <h2 class="text-center" id="lenguajeLabel">Lenguajes de Programación:</h2>
-            <div class="habilidadesIcons" data-aos="fade-up">
-                <i class="fa-brands fa-html5" title="HTML"></i>
-                <i class="fa-brands fa-js" title="JavaScript"></i>
-                <i class="fa-brands fa-css3" title="CSS"></i>
-                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
-                <i class="fa-brands fa-php" title="PHP"></i>
-                <i class="fa-brands fa-java" title="Java"></i>
-                <i class="bi bi-filetype-tsx" title="TypeScript"></i>
-                <i class="fa-brands fa-python" title="Python"></i>
-                <i class="bi bi-filetype-sql" title="MySQL"></i>
-                <i class="fa-brands fa-git" title="GIT"></i>
-                <i class="fa-brands fa-angular" title="Angular"></i>
-                <img class="Spring" src="./assets/images/spring.png" alt="spring" title="Spring">
-            </div>
-            
-            <h2 class="text-center" id="HerramientaU">Herramientas y Utilidades:</h2>
-            <div class="herramientasIcons text-center"  data-aos="fade-up">
-                <i class="fa-brands fa-npm" title="NPM"></i>
-                <img title="PhpServer" class="Phpserver" src="./assets/images/phpserver.png" alt="phpserver">
-                <img title="Eslint" class="eslint" src="./assets/images/eslint.png" alt="Eslint">
-                <img title="Tabnine" class="tabnine" src="./assets/images/Tabnine.png" alt="Tabnine">
-                <img title="Quokkajs" class="Quokka" src="./assets/images/quokkajs.png" alt="Quokka">
-                <img title="Prettier" class="prettier" src="./assets/images/prettier.png" alt="Prettier">
-            </div>
+      </header>
+      <div class="container">
+        <h2 class="text-center" id="lenguajeLabel">
+          Development Languages and Frameworks:
+        </h2>
+        <div class="habilidadesIcons">
+          <i
+            class="fa-brands fa-html5"
+            title="HTML"
+            data-aos="zoom-in"
+            data-aos-duration="100"
+          ></i>
+          <i
+            class="fa-brands fa-js"
+            title="JavaScript"
+            data-aos="zoom-in"
+            data-aos-duration="200"
+          ></i>
+          <i
+            class="fa-brands fa-css3"
+            title="CSS"
+            data-aos="zoom-in "
+            data-aos-duration="300"
+          ></i>
+          <i
+            class="fa-brands fa-bootstrap"
+            title="Bootstrap"
+            data-aos="zoom-in "
+            data-aos-duration="400"
+          ></i>
+          <i
+            class="fa-brands fa-php"
+            title="PHP"
+            data-aos="zoom-in "
+            data-aos-duration="500"
+          ></i>
+          <i
+            class="fa-brands fa-java"
+            title="Java"
+            data-aos="zoom-in "
+            data-aos-duration="600"
+          ></i>
+          <i
+            class="bi bi-filetype-tsx"
+            title="TypeScript"
+            data-aos="zoom-in "
+            data-aos-duration="700"
+          ></i>
+          <i
+            class="fa-brands fa-python"
+            title="Python"
+            data-aos="zoom-in "
+            data-aos-duration="800"
+          ></i>
+          <i
+            class="bi bi-filetype-sql"
+            title="MySQL"
+            data-aos="zoom-in "
+            data-aos-duration="900"
+          ></i>
+          <i
+            class="fa-brands fa-git"
+            title="GIT"
+            data-aos="zoom-in "
+            data-aos-duration="1000"
+          ></i>
+          <i
+            class="fa-brands fa-angular"
+            title="Angular"
+            data-aos="zoom-in "
+            data-aos-duration="1100"
+          ></i>
+          <i
+            class="spring"
+            title="Spring"
+            data-aos="zoom-in "
+            data-aos-duration="1200"
+          ></i>
         </div>
+
+        <h2 class="text-center" id="HerramientaU">Tools and Utilities:</h2>
+        <div class="herramientasIcons text-center" data-aos="fade-up">
+          <i class="fa-brands fa-npm" title="NPM"></i>
+          <i class="phpserver" title="PHP-Server"></i>
+          <i class="icon-eslint" title="Eslint"></i>
+          <i class="icon-tabnine" title="Tabnine"></i>
+          <i class="icon-quokka" title="Quokkajs"></i>
+          <i class="icon-prettier" title="Prettier"></i>
+        </div>
+      </div>
     </section>
-    <header class="bg-dark text-white text-center py-5">
+
+    <section id="Acercademi">
+      <header id="Acerca" class="bg-dark text-white text-center py-4">
         <div class="container">
-            <h1 class="display-7" id="AcercaLabel">Acerca De Mi</h1>
+          <div class="header-aboutme">
+          <i class="bi bi-file-person"></i>
+          <h1 class="display-7" id="AcercaLabel">About Me</h1>
+          </div>
         </div>
-    </header>
-    <section id="Acercademi" class="py-5">
-        <div class="container text-white" style="border-radius: 10%; border: 2px solid rgb(211, 211, 28);" data-aos="fade-up">
-            <i class="bi bi-code"></i>
-            <p id="AcercaLabel1 text-center" style="margin: 0; padding: 0;">
-                Soy Enmanuel Albornoz, con formación inicial como ingeniero en mantenimiento mecánico. Mi trayectoria ha evolucionado hacia la programación web, y actualmente, estoy en busca de mi primer empleo como programador. Aunque mi nivel es junior, me caracterizo por un <strong style="color: rgb(211, 211, 28);">constante proceso de aprendizaje y exploración de nuevas tecnologías.</strong> Con seis años de experiencia en el sector petrolero, decidí adentrarme en el desarrollo web hace cerca de un año. Mi pasión por la música y el interés en deportes como la MMA y Muay Thai complementan mi perfil multidimensional. <strong style="color: rgb(211, 211, 28);">Estoy emocionado por la oportunidad de contribuir y aprender más en el fascinante mundo de la programación.</strong>
+      </header>
+      <div class="container text-white" data-aos="fade-up">
+        <i class="bi bi-code"></i>
+        <div class="container-AboutMe">
+          <div class="paragraph">
+            <p id="AcercaLabel1 text-center" style="margin: 0; padding: 0">
+              I am Enmanuel Albornoz,with initial training as a mechanical
+              maintenance engineer. <strong style="color: #d3d31c;">My career has evolved towards web
+              programming</strong>, where I have 10 months of experience as a WordPress
+              developer, working on both <strong style="color: #d3d31c;">frontend and backend</strong>. Although my level
+              is intermediate, I am characterized by a <strong style="color: #d3d31c;">constant process of
+              learning and exploring new technologies</strong>. Before delving into web
+              development, I accumulated six years of experience in the oil
+              industry, which has given me a unique perspective on problem
+              solving. In addition, <strong style="color: #d3d31c;">I have a passion for music and an interest
+              in sports such as MMA, which complements my multi-dimensional
+              profile</strong> . I am excited for the opportunity to contribute and learn
+              more in this fascinating world.
             </p>
-            <div class="code">
-                <i class="bi bi-code-slash"></i>
-            </div>
+          </div>
+          <div class="img-features animate__animated animate__zoomIn">
+            <img
+              style="width: 460px; height: 380px"
+              src="../../assets/images/EA.jpg"
+              alt="Me"
+            />
+          </div>
         </div>
+        <div class="code">
+          <i class="bi bi-code-slash"></i>
+        </div>
+      </div>
     </section>
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-7" id="AcercaLabel">Certificaciones</h1>
-        </div>
-    </header>
-    <section id="certificaciones" class="py-5">
-        <div class="container text-white text-center" style="font-size: 70px;" data-aos="fade-down">
-            <i class="fa-brands fa-html5">
-                <p style="font-size: 10px; padding: 10px;">HTML</p>
-            </i>
-            <i class="fa-brands fa-css3-alt">
-                <p style="font-size: 10px;">CSS</p>
-            </i>
-            <i class="fa-brands fa-js">
-                <p style="font-size: 10px; padding: 10px;">JavaScript</p>
-            </i>
-            <i class="fa-brands fa-angular">
-                <p style="font-size: 10px; padding: 10px;">Angular</p>
-            </i>
-            <i class="fa-brands fa-python">
-                <p style="font-size: 10px; padding: 10px;">Python</p>
-            </i>
-            <i class="fa-brands fa-java">
-                <p style="font-size: 10px; padding: 10px;">Java</p>
-            </i>
-            <i class="fa-brands fa-git">
-                <p style="font-size: 10px; padding: 10px;">GIT</p>
-            </i>
-            <i class="fa-solid fa-database">
-                <p style="font-size: 10px; padding: 10px;">MySQL</p>
 
-            </i>
+    <section id="certificaciones">
+      <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+          <div class="header-certifications">
+          <i class="bi bi-patch-check"></i>
+          <h1 class="display-7" id="AcercaLabel">Certificates</h1>
+          </div>
         </div>
+      </header>
+      <div class="container text-white text-center py-4" data-aos="fade-down">
+        <div class="html5">
+          <i class="fa-brands fa-html5"></i>
+          <p style="font-size: 10px">HTML</p>
+        </div>
+        <div class="css3">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p style="font-size: 10px">CSS</p>
+        </div>
+        <div class="js">
+          <i class="fa-brands fa-js"></i>
+          <p style="font-size: 10px">JavaScript</p>
+        </div>
+        <div class="angular">
+          <i class="fa-brands fa-angular"></i>
+          <p style="font-size: 10px">Angular</p>
+        </div>
+        <div class="python">
+          <i class="fa-brands fa-python"></i>
+          <p style="font-size: 10px">Python</p>
+        </div>
+        <div class="java">
+          <i class="fa-brands fa-java"></i>
+          <p style="font-size: 10px">Java</p>
+        </div>
+        <div class="git">
+          <i class="fa-brands fa-git"></i>
+          <p style="font-size: 10px">GIT</p>
+        </div>
+        <div class="database">
+          <i class="fa-solid fa-database"></i>
+          <p style="font-size: 10px">MySQL</p>
+        </div>
+      </div>
     </section>
-    <header class=" bg-dark text-white text-center py-5">
+
+    <section id="Contacto">
+      <header class="bg-dark text-white text-center py-4">
         <div class="containerFinal">
-            <h1 class="display-7" id="contacto">Contacto</h1>
+          <div class="header-contact">
+          <i class="bi bi-person-lines-fill"></i>
+          <h1 class="display-7" id="contacto">Contact</h1>
+          </div>
         </div>
-    </header>
-    <section id="Contacto" class="py-2">
-        <div class="center-container" data-aos="fade-up">
-            <i class="fa-solid fa-e"></i>
-            <div class="square" style="border: 1px solid rgb(211, 211, 28); padding: 5px;">
-                <a href="https://ve.linkedin.com/in/enmanuel-a" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px;"></i></a>
-                <a href="https://github.com/ealborn0z" target="_blank"><i class="bi bi-github" style="font-size: 40px; "></i></a>
-                <a href="https://www.upwork.com/freelancers/~010073e72d1e5ab62b" target="_blank"><i class="fa-brands fa-upwork" style="font-size: 40px; "></i></a>
-            </div>
-            <i class="fa-solid fa-a"></i>
+      </header>
+      <div class="center-container py-4">
+        <div
+          class="container-contact"
+          style="
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <i class="fa-solid fa-e"></i>
+          <div
+            class="square"
+            style="border: 1px solid rgb(211, 211, 28); padding: 5px"
+          >
+            <a
+              href="https://ve.linkedin.com/in/enmanuel-a"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              ><i class="bi bi-linkedin" style="font-size: 40px"></i
+            ></a>
+            <a
+              href="https://github.com/ealborn0z"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              ><i class="bi bi-github" style="font-size: 40px"></i
+            ></a>
+            <a
+              href="https://www.upwork.com/freelancers/~010073e72d1e5ab62b"
+              target="_blank"
+              data-aos="zoom-in"
+              data-aos-duration="100"
+              ><i class="fa-brands fa-upwork" style="font-size: 40px"></i
+            ></a>
+          </div>
+          <i class="fa-solid fa-a"></i>
         </div>
+      </div>
     </section>
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2023 EA</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024</p>
+        <p style="color: #D92929;">EA</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
