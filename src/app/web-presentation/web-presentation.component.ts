@@ -41,7 +41,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'EverlastFacilities',
       url: 'https://everlastfacilities.com/',
-      imagen: '../../assets/WebCompleted/EverlastFacilities.png',
+      imagen: './assets/WebCompleted/EverlastFacilities.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -61,7 +61,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Anchor Aquarium',
       url: 'https://anchoraquarium.com/',
-      imagen: '../../assets/supportweb/AnchorAquarium.png',
+      imagen: './assets/supportweb/AnchorAquarium.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -81,7 +81,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Being Financial',
       url: 'https://being-financial.com/',
-      imagen: '../../assets/supportweb/BeingFinancial.png',
+      imagen: './assets/supportweb/BeingFinancial.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'Being Financial is a resource dedicated to the world of finance and financial planning. Its goal is to help you achieve financial freedom, no matter what stage of life youre in: whether youre just starting out, taking care of your family, or planning for retirement.',
@@ -93,7 +93,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Carecentrix',
       url: 'https://www.carecentrix.com/',
-      imagen: '../../assets/supportweb/Carecentrix.png',
+      imagen: './assets/supportweb/Carecentrix.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'CareCentrix is a company dedicated to simplifying the delivery of value-based care in the home. Their focus is on patient wellness, and they accomplish this by identifying and coordinating appropriate care in the home.',
@@ -105,7 +105,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'CMTAssociation',
       url: 'https://cmtassociation.org/',
-      imagen: '../../assets/supportweb/CMTA.png',
+      imagen: './assets/supportweb/CMTA.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -125,7 +125,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Conspiracy Realist',
       url: 'https://conspiracyrealist.com/',
-      imagen: '../../assets/supportweb/ConspiracyRealist.png',
+      imagen: './assets/supportweb/ConspiracyRealist.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -145,7 +145,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Equine Photographers',
       url: 'https://www.equinephotographers.org/',
-      imagen: '../../assets/supportweb/EquinePhotographers.png',
+      imagen: './assets/supportweb/EquinePhotographers.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'Equine Photographers Network (EPNet) is a dynamic community of professional photographers specializing in equine photography. They share a passion for both horses and photography.',
@@ -157,7 +157,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'GJchavezLaw',
       url: 'https://gjchavezlaw.com/',
-      imagen: '../../assets/supportweb/GJchavezLaw.png',
+      imagen: './assets/supportweb/GJchavezLaw.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -177,7 +177,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'GonogoCharts',
       url: 'https://www.gonogocharts.com/',
-      imagen: '../../assets/supportweb/GonogoCharts.png',
+      imagen: './assets/supportweb/GonogoCharts.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'This platform has developed meticulously designed indicators to help investors make more informed decisions about whether the market environment is conducive to launching an idea, strategy or investment.',
@@ -189,7 +189,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'IES',
       url: 'https://www.ies.org/',
-      imagen: '../../assets/supportweb/IES.png',
+      imagen: './assets/supportweb/IES.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -209,7 +209,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'KickDanceStudios',
       url: 'https://www.kickdancestudios.com/',
-      imagen: '../../assets/supportweb/KickDanceStudios.png',
+      imagen: './assets/supportweb/KickDanceStudios.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'Kick Dance Studios is a magical place where dance, theater and acrobatics come together to inspire and motivate students. From your childs first dance class to their graduation performance.',
@@ -221,7 +221,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Lakehurst School',
       url: 'https://lakehurstschool.org/',
-      imagen: '../../assets/supportweb/LakehurstSchoolDistrict.png',
+      imagen: './assets/supportweb/LakehurstSchoolDistrict.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'The Lakehurst School District is a public community serving students in preschool through eighth grade in Lakehurst, Ocean County, New Jersey. Its main school is Lakehurst Elementary School, which opened in September 1943.',
@@ -233,7 +233,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Lets Talk Well Women',
       url: 'https://letstalkwellwomen.org/',
-      imagen: '../../assets/supportweb/LetsTalkWomen.png',
+      imagen: './assets/supportweb/LetsTalkWomen.png',
       tecnologias: [
         'Bricks',
         'Wordpress',
@@ -253,7 +253,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'LightSearch',
       url: 'https://www.lightsearch.io/',
-      imagen: '../../assets/supportweb/LightSearch.png',
+      imagen: './assets/supportweb/LightSearch.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
       descripcion:
         'Light Search is a comprehensive tool for lighting professionals. It provides accurate information and fast search results on products to be specified in lighting projects.',
@@ -265,7 +265,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Lydia Hiby',
       url: 'https://lydiahiby.com/',
-      imagen: '../../assets/supportweb/LydiaHiby.png',
+      imagen: './assets/supportweb/LydiaHiby.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Lydia Hiby is a sought-after animal communicator. Her childhood dream of becoming a sort of fairy godmother for animals seems to have come true. Her clients come from every state in the U.S. and numerous European countries.',
@@ -277,7 +277,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'MediaFirstGroup',
       url: 'https://www.mediafirstgroup.com/',
-      imagen: '../../assets/supportweb/MediaFirstGroup.png',
+      imagen: './assets/supportweb/MediaFirstGroup.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Media First Group is an award-winning media company specializing in television production for the state of New Jersey, both broadcast, cable and streaming. Its team has decades of experience in all aspects of production.',
@@ -289,7 +289,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'MonarchHousing',
       url: 'https://monarchhousing.org/',
-      imagen: '../../assets/supportweb/MonarchHousing.png',
+      imagen: './assets/supportweb/MonarchHousing.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Monarch Housing Associates is dedicated to creating affordable and supportive housing. They work to develop housing where residents can thrive. They also support communities in their fight against homelessness.',
@@ -301,7 +301,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'National Council',
       url: 'https://www.ncqlp.org/',
-      imagen: '../../assets/supportweb/NationalCouncil.png',
+      imagen: './assets/supportweb/NationalCouncil.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'NCQLPs Lighting Certification (LC) program establishes a benchmark standard that covers the entire field of lighting. Through its testing mechanism, candidates can earn the Lighting Certification designation.',
@@ -313,7 +313,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'National Lighting Bureau',
       url: 'https://www.nlb.org/',
-      imagen: '../../assets/supportweb/NationalLightingBureau.png',
+      imagen: './assets/supportweb/NationalLightingBureau.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'The National Lighting Bureau (NLB) is a non-profit organization dedicated to promoting excellence in lighting design and use. It focuses on high-benefit lighting that enhances human performance, safety and health.',
@@ -325,7 +325,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Northern Ocean Habit',
       url: 'https://northernoceanhabitat.org/',
-      imagen: '../../assets/supportweb/NorthernOceanHabit.png',
+      imagen: './assets/supportweb/NorthernOceanHabit.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Northern Ocean Habitat for Humanity is a non-profit organization that provides affordable housing solutions in Ocean County, New Jersey. They assist with home construction, home repairs and organize community events such as “Women Build” and “Walk to Build”.',
@@ -337,7 +337,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Ocean Beach & Yacht Club',
       url: 'https://obyc.net/',
-      imagen: '../../assets/supportweb/OceanBeach&YachtClub.png',
+      imagen: './assets/supportweb/OceanBeach&YachtClub.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Ocean Beach & Yacht Club is a small, private, family-friendly beach community located between Point Pleasant and Seaside Park, New Jersey. Founded in 1948, it has been a beacon of joy for its members, friends and guests for over seventy years.',
@@ -349,7 +349,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'ONNJ',
       url: 'https://www.onnj.com/',
-      imagen: '../../assets/supportweb/ONNJ.png',
+      imagen: './assets/supportweb/ONNJ.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'On New Jersey is a New Jersey-based broadcast channel providing news, talk and entertainment for the entire state. With an audience of over 9 million people, ONNJ keeps you informed, entertained and connected to all things Jersey.',
@@ -361,7 +361,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Parking Lot Services',
       url: 'https://parkinglotservices.net/',
-      imagen: '../../assets/supportweb/ParkingLotServices.png',
+      imagen: './assets/supportweb/ParkingLotServices.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Parking Lot Services is a New Jersey company that offers commercial parking lot paving and repair services. They specialize in asphalt maintenance, crack sealing, pothole patching, sidewalk and curb repair, and line striping.',
@@ -373,7 +373,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Seacrest Beach Club',
       url: 'https://www.seacrestbeachclub.org/',
-      imagen: '../../assets/supportweb/SeacrestBeachClub.png',
+      imagen: './assets/supportweb/SeacrestBeachClub.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Seacrest Beach Club is a private beach community in Toms River Township, New Jersey, established in 1954. It offers its members and guests a place to relax with access to private beaches, surfing and community events throughout the year.',
@@ -385,7 +385,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'SeaLevelAquarium',
       url: 'https://www.sealevelaquarium.com/',
-      imagen: '../../assets/supportweb/SeaLevelAquarium.png',
+      imagen: './assets/supportweb/SeaLevelAquarium.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Sea Level Aquarium is a specialty store for saltwater fish, live corals and exotic species located in northern New Jersey. They offer a wide selection of coral colonies, frags and invertebrate fish for aquariums.',
@@ -397,7 +397,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'S-FX',
       url: 'https://s-fx.com/',
-      imagen: '../../assets/supportweb/S-FX.png',
+      imagen: './assets/supportweb/S-FX.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'S-FX.com is a company that offers solutions for small businesses. They specialize in web design, application development, digital marketing and technology services. Their goal is to help businesses establish an effective and engaging online presence.',
@@ -409,7 +409,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'Shore Good Donuts (Old Website)',
       url: 'https://shoregooddonuts.com/',
-      imagen: '../../assets/supportweb/ShoreGoodDonuts.png',
+      imagen: './assets/supportweb/ShoreGoodDonuts.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'Shore Good Donuts is a store on Long Beach Island, New Jersey, specializing in made-to-order donuts. They offer a variety of flavors, including filled donuts such as Boston cream and jelly.',
@@ -421,7 +421,7 @@ export class WebPresentationComponent implements OnInit {
     {
       nombre: 'TouchStoneGroup',
       url: 'https://tsgre.com/',
-      imagen: '../../assets/supportweb/TouchStoneGroup.png',
+      imagen: './assets/supportweb/TouchStoneGroup.png',
       tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS'],
       descripcion:
         'TSG Real Estate is a company dedicated to the real estate sector. They offer services related to the purchase, sale and rental of properties. Their team is committed to providing personalized solutions and expert advice to their clients.',
