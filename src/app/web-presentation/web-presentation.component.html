@@ -114,8 +114,8 @@
     <section id="Experiencia">
       <header class="bg-dark text-white text-center py-4">
         <div class="header-experience">
-        <i class="bi bi-briefcase"></i>
-        <h1 class="display-7" id="Experiencia">Work Experience</h1>
+          <i class="bi bi-briefcase"></i>
+          <h1 class="display-7" id="Experiencia">Work Experience</h1>
         </div>
       </header>
       <div class="container" data-aos="fade-up">
@@ -148,13 +148,14 @@
     <section id="Proyectos">
       <header class="bg-dark text-white text-center py-4">
         <div class="header-project">
-        <i class="bi bi-backpack2"></i>
-        <h1 class="display-7" id="ProyectoLabel">Highlight Projects</h1>
+          <i class="bi bi-backpack2"></i>
+          <h1 class="display-7" id="ProyectoLabel">Highlight Projects</h1>
         </div>
       </header>
       <div class="container" data-aos="fade-up">
         <p id="acercaDeMiTexto">
-          With 10 months of experience working on <a href="https://s-fx.com/about/">S-FX</a>, I have worked on
+          With 10 months of experience working on
+          <a href="https://s-fx.com/about/">S-FX</a>, I have worked on
           <strong>Outstanding Projects</strong> spanning both
           <strong>frontend and backend WordPress development</strong>. The
           projects in my portfolio are those in which I have worked on providing
@@ -163,23 +164,26 @@
           they represent my earlys
           <strong>achievements and continued growth in web development</strong>.
         </p>
-       <app-counter 
-  [counterDescription]="'Total Projects'" 
-  [projectsCompleted]="1"  
-  [projectsSupports]="27"     
-  [websiteCompletedTitle]="'Completed Websites'" 
-  [websiteSupportsTitle]="'Supported Websites'">
-</app-counter>
+        <app-counter
+          [counterDescription]="'Total Projects'"
+          [projectsCompleted]="2"
+          [projectsSupports]="29"
+          [websiteCompletedTitle]="'Completed Websites'"
+          [websiteSupportsTitle]="'Supported Websites'"
+        >
+        </app-counter>
 
         <div class="buttom">
           <ul>
-            <li id="WebCompleted"
+            <li
+              id="WebCompleted"
               (click)="seleccionarCategoria('WebCompleted')"
               [class.selected]="categoriaSeleccionada === 'WebCompleted'"
             >
               Completed Websites
             </li>
-            <li id="WebSupports"
+            <li
+              id="WebSupports"
               (click)="seleccionarCategoria('WebSupports')"
               [class.selected]="categoriaSeleccionada === 'WebSupports'"
             >
@@ -187,9 +191,7 @@
             </li>
           </ul>
         </div>
-          
 
- 
         <div class="grid-container">
           <div
             *ngFor="let proyecto of proyectosMostrados"
@@ -273,8 +275,8 @@
       <header class="bg-dark text-white text-center py-4">
         <div class="containerFinal">
           <div class="header-abilities">
-          <i class="bi bi-rocket-takeoff"></i>
-          <h1 class="display-7" id="HabilidadLabel">Abilities</h1>
+            <i class="bi bi-rocket-takeoff"></i>
+            <h1 class="display-7" id="HabilidadLabel">Abilities</h1>
           </div>
         </div>
       </header>
@@ -283,88 +285,151 @@
           Development Languages and Frameworks:
         </h2>
         <div class="habilidadesIcons">
-          <i
-            class="fa-brands fa-html5"
-            title="HTML"
-            data-aos="zoom-in"
-            data-aos-duration="100"
-          ></i>
-          <i
-            class="fa-brands fa-js"
-            title="JavaScript"
-            data-aos="zoom-in"
-            data-aos-duration="200"
-          ></i>
-          <i
-            class="fa-brands fa-css3"
-            title="CSS"
-            data-aos="zoom-in "
-            data-aos-duration="300"
-          ></i>
-          <i
-            class="fa-brands fa-bootstrap"
-            title="Bootstrap"
-            data-aos="zoom-in "
-            data-aos-duration="400"
-          ></i>
-          <i
-            class="fa-brands fa-php"
-            title="PHP"
-            data-aos="zoom-in "
-            data-aos-duration="500"
-          ></i>
-          <i
-            class="fa-brands fa-java"
-            title="Java"
-            data-aos="zoom-in "
-            data-aos-duration="600"
-          ></i>
-          <i
-            class="bi bi-filetype-tsx"
-            title="TypeScript"
-            data-aos="zoom-in "
-            data-aos-duration="700"
-          ></i>
-          <i
-            class="fa-brands fa-python"
-            title="Python"
-            data-aos="zoom-in "
-            data-aos-duration="800"
-          ></i>
-          <i
-            class="bi bi-filetype-sql"
-            title="MySQL"
-            data-aos="zoom-in "
-            data-aos-duration="900"
-          ></i>
-          <i
-            class="fa-brands fa-git"
-            title="GIT"
-            data-aos="zoom-in "
-            data-aos-duration="1000"
-          ></i>
-          <i
-            class="fa-brands fa-angular"
-            title="Angular"
-            data-aos="zoom-in "
-            data-aos-duration="1100"
-          ></i>
-          <i
-            class="spring"
-            title="Spring"
-            data-aos="zoom-in "
-            data-aos-duration="1200"
-          ></i>
+          <ul class="icons_techn_tools">
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-wordpress"
+                data-aos="zoom-in"
+                data-aos-duration="50"
+              ></i>
+              <span class="tooltip-text">Wordpress</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-html5"
+                data-aos="zoom-in"
+                data-aos-duration="100"
+              ></i>
+              <span class="tooltip-text">HTML</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-js"
+                data-aos="zoom-in"
+                data-aos-duration="200"
+              ></i>
+              <span class="tooltip-text">JavaScript</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-css3"
+                data-aos="zoom-in"
+                data-aos-duration="300"
+              ></i>
+              <span class="tooltip-text">CSS</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-bootstrap"
+                data-aos="zoom-in"
+                data-aos-duration="400"
+              ></i>
+              <span class="tooltip-text">Bootstrap</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-php"
+                data-aos="zoom-in "
+                data-aos-duration="500"
+              ></i>
+              <span class="tooltip-text">PHP</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-java"
+                data-aos="zoom-in "
+                data-aos-duration="600"
+              ></i>
+              <span class="tooltip-text">Java</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="bi bi-filetype-tsx"
+                data-aos="zoom-in "
+                data-aos-duration="700"
+              ></i>
+              <span class="tooltip-text">TypeScript</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-python"
+                data-aos="zoom-in "
+                data-aos-duration="800"
+              ></i>
+              <span class="tooltip-text">Python</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="bi bi-filetype-sql"
+                data-aos="zoom-in "
+                data-aos-duration="900"
+              ></i>
+              <span class="tooltip-text">MySQL</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-git"
+                data-aos="zoom-in "
+                data-aos-duration="1000"
+              ></i>
+              <span class="tooltip-text">GIT</span>
+            </li>
+
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="fa-brands fa-angular"
+                data-aos="zoom-in "
+                data-aos-duration="1100"
+              ></i>
+              <span class="tooltip-text">Angular</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i
+                class="spring"
+                data-aos="zoom-in "
+                data-aos-duration="1200"
+              ></i>
+              <span class="tooltip-text">Spring</span>
+            </li>
+          </ul>
         </div>
 
         <h2 class="text-center" id="HerramientaU">Tools and Utilities:</h2>
         <div class="herramientasIcons text-center" data-aos="fade-up">
-          <i class="fa-brands fa-npm" title="NPM"></i>
-          <i class="phpserver" title="PHP-Server"></i>
-          <i class="icon-eslint" title="Eslint"></i>
-          <i class="icon-tabnine" title="Tabnine"></i>
-          <i class="icon-quokka" title="Quokkajs"></i>
-          <i class="icon-prettier" title="Prettier"></i>
+          <ul class="icons_techn_tools">
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="fa-brands fa-npm"></i>
+              <span class="tooltip-text">NPM</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="phpserver"></i>
+              <span class="tooltip-text">PHP-Server</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-eslint"></i>
+              <span class="tooltip-text">Eslint</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-tabnine"></i>
+              <span class="tooltip-text">Tabnine</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-quokka"></i>
+              <span class="tooltip-text">Quokkajs</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-prettier"></i>
+              <span class="tooltip-text">Prettier</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-godesk"></i>
+              <span class="tooltip-text">GoDesk</span>
+            </li>
+            <li class="tooltip-container animate__animated animate__zoomIn">
+              <i class="icon-microsoftteams"></i>
+              <span class="tooltip-text">MicrosoftTeams</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -373,8 +438,8 @@
       <header id="Acerca" class="bg-dark text-white text-center py-4">
         <div class="container">
           <div class="header-aboutme">
-          <i class="bi bi-file-person"></i>
-          <h1 class="display-7" id="AcercaLabel">About Me</h1>
+            <i class="bi bi-file-person"></i>
+            <h1 class="display-7" id="AcercaLabel">About Me</h1>
           </div>
         </div>
       </header>
@@ -384,17 +449,25 @@
           <div class="paragraph">
             <p id="AcercaLabel1 text-center" style="margin: 0; padding: 0">
               I am Enmanuel Albornoz,with initial training as a mechanical
-              maintenance engineer. <strong style="color: #d3d31c;">My career has evolved towards web
-              programming</strong>, where I have 10 months of experience as a WordPress
-              developer, working on both <strong style="color: #d3d31c;">frontend and backend</strong>. Although my level
-              is intermediate, I am characterized by a <strong style="color: #d3d31c;">constant process of
-              learning and exploring new technologies</strong>. Before delving into web
-              development, I accumulated six years of experience in the oil
-              industry, which has given me a unique perspective on problem
-              solving. In addition, <strong style="color: #d3d31c;">I have a passion for music and an interest
-              in sports such as MMA, which complements my multi-dimensional
-              profile</strong> . I am excited for the opportunity to contribute and learn
-              more in this fascinating world.
+              maintenance engineer.
+              <strong style="color: #d3d31c"
+                >My career has evolved towards web programming</strong
+              >, where I have 10 months of experience as a WordPress developer,
+              working on both
+              <strong style="color: #d3d31c">frontend and backend</strong>.
+              Although my level is intermediate, I am characterized by a
+              <strong style="color: #d3d31c"
+                >constant process of learning and exploring new
+                technologies</strong
+              >. Before delving into web development, I accumulated six years of
+              experience in the oil industry, which has given me a unique
+              perspective on problem solving. In addition,
+              <strong style="color: #d3d31c"
+                >I have a passion for music and an interest in sports such as
+                MMA, which complements my multi-dimensional profile</strong
+              >
+              . I am excited for the opportunity to contribute and learn more in
+              this fascinating world.
             </p>
           </div>
           <div class="img-features animate__animated animate__zoomIn">
@@ -415,8 +488,8 @@
       <header class="bg-dark text-white text-center py-4">
         <div class="container">
           <div class="header-certifications">
-          <i class="bi bi-patch-check"></i>
-          <h1 class="display-7" id="AcercaLabel">Certificates</h1>
+            <i class="bi bi-patch-check"></i>
+            <h1 class="display-7" id="AcercaLabel">Certificates</h1>
           </div>
         </div>
       </header>
@@ -460,16 +533,17 @@
       <header class="bg-dark text-white text-center py-4">
         <div class="containerFinal">
           <div class="header-contact">
-          <i class="bi bi-person-lines-fill"></i>
-          <h1 class="display-7" id="contacto">Contact</h1>
+            <i class="bi bi-person-lines-fill"></i>
+            <h1 class="display-7" id="contacto">Contact</h1>
           </div>
         </div>
       </header>
       <div class="center-container py-4">
         <div
           class="container-contact"
+          data-aos="zoom-in"
           style="
-            padding: 40px;
+            padding: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -506,10 +580,16 @@
         </div>
       </div>
     </section>
+    <div class="top-button">
+      <button #backToTopButton (click)="scrollToTop()">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+    </div>
+
     <footer class="bg-dark text-white text-center py-3">
       <div class="container">
         <p>&copy; 2024</p>
-        <p style="color: #D92929;">EA</p>
+        <p style="color: #d92929">EA</p>
       </div>
     </footer>
   </body>

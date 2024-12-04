@@ -2,10 +2,31 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 2;
   background-color: black;
-  max-width: 1366px !important;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto !important;
+  padding: 0 20px;
 
 }
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+
 
 
 .navbar {
@@ -232,7 +253,7 @@ footer {
   margin-left: 20px;
   margin-bottom: 4rem;
   width: 20%;
-  cursor: pointer;
+  cursor: pointer !important;
   text-align: center;
 }
 
@@ -812,13 +833,16 @@ i.fa-a {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 115%;
+  bottom: 130%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 12px;
+
 }
+
+
 
 .tooltip-container:hover .tooltip-text {
   visibility: visible;
@@ -895,6 +919,39 @@ i.icon-bricks {
   background-repeat: no-repeat;
   color: yellow;
   font-size: 2.9em;
+}
+
+
+i.icon-godesk {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/logo/godesk-icon-new.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: yellow;
+  font-size: 2.9em;
+}
+
+i.icon-microsoftteams {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/logo/microsoftteams-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 2.9em;
+  color: blue;
+}
+
+
+a.link-item.customize-unpreviewable {
+  display: flex;
+  justify-content: center;
 }
 
 i.spring {
@@ -1040,6 +1097,7 @@ i.icon-acf {
   align-items: center;
   gap: 20px;
   margin: 20px auto;
+  padding: 50px !important;
 }
 
 #certificaciones>div>div>i {
@@ -1117,8 +1175,8 @@ i.icon-acf {
 #Acercademi>div {
   border-radius: 10%;
   border: 2px solid rgb(211, 211, 28);
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
 }
 
 a {
@@ -1246,22 +1304,32 @@ body>main>div>div:nth-child(2)>picture>div>img {
   }
 
   #Habilidad>div>div.habilidadesIcons {
-    display: grid;
-    justify-items: center;
-    overflow: hidden;
-    grid-template-columns: repeat(4, 1fr);
+    display: block;
 
   }
 
 
   #Habilidad>div>div.herramientasIcons.text-center {
+    display: block;
+
+  }
+
+  #Habilidad>div>div.herramientasIcons.text-center.aos-init.aos-animate>ul {
+
     display: grid;
     justify-items: center;
     gap: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
     overflow: hidden;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  #Habilidad>div>div.habilidadesIcons>ul {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 1fr);
+
   }
 
   #Acercademi>div>div.container-AboutMe {
@@ -1298,13 +1366,11 @@ body>main>div>div:nth-child(2)>picture>div>img {
   .navbar-collapse.show {
     display: block !important;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
-    /* Transición suave */
 
     width: 100% !important;
 
   }
 
-  /* Asegura que los elementos del menú se vean bien en móviles */
   .navbar-nav {
     flex-direction: column;
     align-items: center;
@@ -1314,7 +1380,6 @@ body>main>div>div:nth-child(2)>picture>div>img {
     margin-bottom: 5px;
   }
 
-  /* Ajustes opcionales para mejorar el diseño en móviles */
   .nav-item {
     margin-bottom: 10px;
   }
@@ -1374,7 +1439,6 @@ body>main>div>div:nth-child(2)>picture>div>img {
   height: 5px;
   background-color: green;
   width: 0;
-  /* Se actualizará dinámicamente */
   margin: 10px 0;
 }
 
@@ -1382,4 +1446,63 @@ body>footer>div {
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+
+body>div>button {
+  position: fixed;
+  bottom: 30px !important;
+  right: 30px !important;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+body>div>button.show {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  body>div>button {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+body>nav {
+  max-width: 1366px;
+}
+
+
+#WebCompleted.selected {
+  background-color: #4CAF50;
+  color: #0b3957;
+  font-weight: bold;
+}
+
+#WebSupports.selected {
+  background-color: #4CAF50;
+  color: #0b3957;
+  font-weight: bold;
+}
+
+body>nav {
+  margin: 0 auto !important;
+}
+
+
+.icons_techn_tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

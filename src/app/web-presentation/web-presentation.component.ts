@@ -1,4 +1,10 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  OnInit,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 
 interface Proyecto {
   nombre: string;
@@ -10,8 +16,6 @@ interface Proyecto {
   color: string;
   ColorTextTitle: string;
   ColorTextParagraph: string;
-
- 
 }
 
 @Component({
@@ -23,8 +27,7 @@ export class WebPresentationComponent implements OnInit {
   isMenuOpen = false;
   isNavbarFixed = false;
   isDarkMode = false;
-
-
+  @ViewChild('backToTopButton') backToTopButton!: ElementRef;
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
@@ -38,6 +41,26 @@ export class WebPresentationComponent implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
   }
   proyectos: Proyecto[] = [
+    {
+      nombre: 'Wordpress Portfolio',
+      url: 'https://eaportfoliodev-1018822.ingress-alpha.ewp.live/',
+      imagen: './assets/WebCompleted/eawordpressportfolio.png',
+      tecnologias: [
+        'Wordpress',
+        'PHP',
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'ACF',
+        'Bootstrap',
+      ],
+      descripcion:
+        'I developed this website in wordpress using php code in the structure, integrating javascript for script handling and advanced custom field for the dynamic fields. For the styles i have use css, bootstrap, fontawesome and more. This is my personal portfolio in wordpress.',
+      categoria: 'WebCompleted',
+      color: '#7FA1C1',
+      ColorTextTitle: '#7FA1C1',
+      ColorTextParagraph: '#7FA1C1',
+    },
     {
       nombre: 'EverlastFacilities',
       url: 'https://everlastfacilities.com/',
@@ -76,7 +99,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#179FD2',
       ColorTextTitle: '#179FD2',
-      ColorTextParagraph: '#179FD2'
+      ColorTextParagraph: '#179FD2',
     },
     {
       nombre: 'Being Financial',
@@ -88,7 +111,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#95C346',
       ColorTextTitle: '#95C346',
-      ColorTextParagraph: '#95C346'
+      ColorTextParagraph: '#95C346',
     },
     {
       nombre: 'Carecentrix',
@@ -100,7 +123,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#6E256F',
       ColorTextTitle: '#6E256F',
-      ColorTextParagraph: '#6E256F'
+      ColorTextParagraph: '#6E256F',
     },
     {
       nombre: 'CMTAssociation',
@@ -120,7 +143,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#A8C3BA',
       ColorTextTitle: '#A8C3BA',
-      ColorTextParagraph: '#A8C3BA'
+      ColorTextParagraph: '#A8C3BA',
     },
     {
       nombre: 'Conspiracy Realist',
@@ -140,7 +163,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#E0D1B8',
       ColorTextTitle: '#E0D1B8',
-      ColorTextParagraph: '#E0D1B8'
+      ColorTextParagraph: '#E0D1B8',
     },
     {
       nombre: 'Equine Photographers',
@@ -152,7 +175,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#D4A001',
       ColorTextTitle: '#D4A001',
-      ColorTextParagraph: '#D4A001'
+      ColorTextParagraph: '#D4A001',
     },
     {
       nombre: 'GJchavezLaw',
@@ -172,7 +195,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#D8A666',
       ColorTextTitle: '#D8A666',
-      ColorTextParagraph: '#D8A666'
+      ColorTextParagraph: '#D8A666',
     },
     {
       nombre: 'GonogoCharts',
@@ -184,7 +207,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#1A4F7A',
       ColorTextTitle: '#1A4F7A',
-      ColorTextParagraph: '#1A4F7A'
+      ColorTextParagraph: '#1A4F7A',
     },
     {
       nombre: 'IES',
@@ -204,7 +227,27 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#F7F7F7',
       ColorTextTitle: '#F7F7F7',
-      ColorTextParagraph: '#F7F7F7'
+      ColorTextParagraph: '#F7F7F7',
+    },
+    {
+      nombre: 'IES Atlanta',
+      url: 'https://atlanta.ies.org/',
+      imagen: './assets/supportweb/IesAtlanta.png',
+      tecnologias: [
+        'Bricks',
+        'Wordpress',
+        'PHP',
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'ACF',
+      ],
+      descripcion:
+        'We are the Atlanta based section of the Illuminating Engineering Society, a not-for-profit organization dedicated to all aspects of the ART and SCIENCE of ILLUMINATION.The IES is the recognized technical authority on illumination.',
+      categoria: 'WebSupports',
+      color: '#F7F7F7',
+      ColorTextTitle: '#F7F7F7',
+      ColorTextParagraph: '#F7F7F7',
     },
     {
       nombre: 'KickDanceStudios',
@@ -216,7 +259,19 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#D7940D',
       ColorTextTitle: '#D7940D',
-      ColorTextParagraph: '#D7940D'
+      ColorTextParagraph: '#D7940D',
+    },
+    {
+      nombre: 'KickPerformingArts',
+      url: 'https://kickperformingarts.com/',
+      imagen: './assets/supportweb/KickPerforming.png',
+      tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
+      descripcion:
+        'From your child’s first dance class to their graduation performance, Kick has a dance, theater or acro class for everyone! We specialize in beginner dancers of all ages and offer training through pre-professional levels. Kick is truly More Than Just Great Dancing™!',
+      categoria: 'WebSupports',
+      color: '#D7940D',
+      ColorTextTitle: '#D7940D',
+      ColorTextParagraph: '#D7940D',
     },
     {
       nombre: 'Lakehurst School',
@@ -228,7 +283,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#3C3FB5',
       ColorTextTitle: '#3C3FB5',
-      ColorTextParagraph: '#3C3FB5'
+      ColorTextParagraph: '#3C3FB5',
     },
     {
       nombre: 'Lets Talk Well Women',
@@ -248,7 +303,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#DF3697',
       ColorTextTitle: '#DF3697',
-      ColorTextParagraph: '#DF3697'
+      ColorTextParagraph: '#DF3697',
     },
     {
       nombre: 'LightSearch',
@@ -260,7 +315,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#2A4A7C',
       ColorTextTitle: '#2A4A7C',
-      ColorTextParagraph: '#2A4A7C'
+      ColorTextParagraph: '#2A4A7C',
     },
     {
       nombre: 'Lydia Hiby',
@@ -272,7 +327,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#A78D78',
       ColorTextTitle: '#A78D78',
-      ColorTextParagraph: '#A78D78'
+      ColorTextParagraph: '#A78D78',
     },
     {
       nombre: 'MediaFirstGroup',
@@ -284,7 +339,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#918C83',
       ColorTextTitle: '#918C83',
-      ColorTextParagraph: '#918C83'
+      ColorTextParagraph: '#918C83',
     },
     {
       nombre: 'MonarchHousing',
@@ -296,7 +351,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#8A9CAF',
       ColorTextTitle: '#8A9CAF',
-      ColorTextParagraph: '#8A9CAF'
+      ColorTextParagraph: '#8A9CAF',
     },
     {
       nombre: 'National Council',
@@ -308,7 +363,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#FFFFFF',
       ColorTextTitle: '#FFFFFF',
-      ColorTextParagraph: '#FFFFFF'
+      ColorTextParagraph: '#FFFFFF',
     },
     {
       nombre: 'National Lighting Bureau',
@@ -320,7 +375,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#FFFFFF',
       ColorTextTitle: '#FFFFFF',
-      ColorTextParagraph: '#FFFFFF'
+      ColorTextParagraph: '#FFFFFF',
     },
     {
       nombre: 'Northern Ocean Habit',
@@ -332,7 +387,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#C4D600',
       ColorTextTitle: '#C4D600',
-      ColorTextParagraph: '#C4D600'
+      ColorTextParagraph: '#C4D600',
     },
     {
       nombre: 'Ocean Beach & Yacht Club',
@@ -344,7 +399,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#8AA4BC',
       ColorTextTitle: '#8AA4BC',
-      ColorTextParagraph: '#8AA4BC'
+      ColorTextParagraph: '#8AA4BC',
     },
     {
       nombre: 'ONNJ',
@@ -356,7 +411,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#1237A1',
       ColorTextTitle: '#1237A1',
-      ColorTextParagraph: '#1237A1'
+      ColorTextParagraph: '#1237A1',
     },
     {
       nombre: 'Parking Lot Services',
@@ -368,7 +423,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#9A9892',
       ColorTextTitle: '#9A9892',
-      ColorTextParagraph: '#9A9892'
+      ColorTextParagraph: '#9A9892',
     },
     {
       nombre: 'Seacrest Beach Club',
@@ -380,7 +435,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#6EA9DD',
       ColorTextTitle: '#6EA9DD',
-      ColorTextParagraph: '#6EA9DD'
+      ColorTextParagraph: '#6EA9DD',
     },
     {
       nombre: 'SeaLevelAquarium',
@@ -392,7 +447,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#0059A1',
       ColorTextTitle: '#0059A1',
-      ColorTextParagraph: '#0059A1'
+      ColorTextParagraph: '#0059A1',
     },
     {
       nombre: 'S-FX',
@@ -404,7 +459,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#7A8DAE',
       ColorTextTitle: '#7A8DAE',
-      ColorTextParagraph: '#7A8DAE'
+      ColorTextParagraph: '#7A8DAE',
     },
     {
       nombre: 'Shore Good Donuts (Old Website)',
@@ -416,7 +471,19 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#51A1C2',
       ColorTextTitle: '#51A1C2',
-      ColorTextParagraph: '#51A1C2'
+      ColorTextParagraph: '#51A1C2',
+    },
+    {
+      nombre: 'TheHipEvent',
+      url: 'https://thehipevent.com/',
+      imagen: './assets/supportweb/TheHipEvent.png',
+      tecnologias: ['Wordpress', 'PHP', 'JavaScript', 'HTML', 'CSS', 'ACF'],
+      descripcion:
+        'The Hip Event is an event planning company that specializes in creating unforgettable gatherings. Their goal is to deliver exceptional results tailored to your vision, from corporate events to intimate celebrations. They combine creativity with meticulous planning to ensure that every detail is aligned with your objectives.',
+      categoria: 'WebSupports',
+      color: '#9A88BC',
+      ColorTextTitle: '#9A88BC',
+      ColorTextParagraph: '#9A88BC',
     },
     {
       nombre: 'TouchStoneGroup',
@@ -428,7 +495,7 @@ export class WebPresentationComponent implements OnInit {
       categoria: 'WebSupports',
       color: '#E5E5E5',
       ColorTextTitle: '#E5E5E5',
-      ColorTextParagraph: '#E5E5E5'
+      ColorTextParagraph: '#E5E5E5',
     },
   ];
 
@@ -440,16 +507,26 @@ export class WebPresentationComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.mostrarProyectos();
   }
+
   @HostListener('window:scroll', [])
-  onWindowScroll() {
-    if (window.pageYOffset > 100) {
-      this.isNavbarFixed = true;
+  onWindowScroll(): void {
+    this.isNavbarFixed = window.pageYOffset > 100;
+
+    if (window.scrollY >= 100) {
+      this.backToTopButton.nativeElement.classList.add('show');
     } else {
-      this.isNavbarFixed = false;
+      this.backToTopButton.nativeElement.classList.remove('show');
     }
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
 
   mostrarProyectos() {
@@ -494,6 +571,8 @@ export class WebPresentationComponent implements OnInit {
         return 'icon-bricks';
       case 'ACF':
         return 'icon-acf';
+      case 'Bootstrap':
+        return 'fa-brands fa-bootstrap';
 
       default:
         return '';
