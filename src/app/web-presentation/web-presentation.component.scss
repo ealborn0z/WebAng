@@ -225,7 +225,7 @@ footer {
     #acercaDeMiTexto {
       font-size: 16px;
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     ul {
@@ -808,6 +808,7 @@ i.fa-a {
 #Proyectos>div>div.buttom>ul {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 #Proyectos>div>div.grid-container>div>div>div.descripcion-proyecto>div.icons-structure {
@@ -1423,6 +1424,11 @@ body>main>div>div:nth-child(2)>picture>div>img {
 
 .counter-container {
   margin: 20px 0;
+}
+
+.counter-description {
+
+  padding: 40px !important;
 }
 
 .counter-websites {
